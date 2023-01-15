@@ -1,0 +1,44 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+
+
+/* Programme qui permet de déterminer si une année est bisextile */
+
+#include <stdio.h>
+
+int main(){
+    float a,b,result ;
+    char operateur;
+
+    printf("Saisissez votre première valeur \n");
+    scanf("%f",&a);
+    printf("Saisissez votre deuxième valeur \n");
+    scanf("%f",&b);
+    printf("A présent, saisissez l'opérateur de votre ( +,-;/ ou *)");
+    scanf("%c",&operateur);
+    while (operateur!="-" || operateur!="+"|| operateur!="/"||operateur!="*"){
+        printf(" Erreur , saisissez à nouveau l'opérateur(+,-,/,*)");
+        scanf("%c",&operateur);
+    }
+    switch (operateur){
+        case '+':
+            result=a+b;
+            break;
+        case '-':;
+            result=a-b;
+            break;
+        case '/':
+            result=a/b;
+            break;
+        default:result= a*b;
+            break;
+    }
+    printf("Le résultat de l'opération est de%f",result);
+return 0;
+}

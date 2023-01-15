@@ -1,0 +1,16 @@
+/* Programme qui calcule l'air d'un rectangle en fonction de la longueur et largeur saisit par l'utilisateur.
+#include <stdio.h>
+
+int main()
+{
+    
+    float l,L,aire;
+    
+    printf("Saisissez la longueur (m)\n");
+    scanf("%f" , &L);
+    printf("Saisissez la largeur (m) \n");
+    scanf("%f" , &l);
+    aire = L*l;
+    printf("L'aire est de %f mètre \n ", aire);
+    return 0;
+}

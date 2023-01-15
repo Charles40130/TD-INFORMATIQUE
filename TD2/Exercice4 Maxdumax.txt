@@ -1,0 +1,26 @@
+/* Programme renvoi le nombre max parmis les 3 nombres saisit par l'utilisateur */
+#include <stdio.h>
+
+int main()
+{
+    
+    float a,b,c,max;
+    
+    printf("Saisissez le premier nombre \n");
+    scanf("%f" , &a);
+    printf("Saisissez le deuxième nombre \n");
+    scanf("%f" , &b);
+    printf("Saisissez le troisième nombre \n");
+    scanf("%f" , &c);
+    if (a >= b){
+        max =a;
+    }
+    else{
+        max= b;
+    }
+    if (c >= max){
+        max =c;
+    }
+    printf("Le maximum parmis les 3 nombres est %f \n ", max);
+    return 0;
+}

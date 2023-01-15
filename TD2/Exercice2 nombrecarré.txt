@@ -1,0 +1,15 @@
+/*Programme qui calcule le carré d'un nombre */
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int nb;
+    printf("Saisissez un nombre \n");
+    scanf("%d" , &nb);
+    nb = (nb*nb);
+    printf("Le carré est %d", nb);
+    return 0;
+}

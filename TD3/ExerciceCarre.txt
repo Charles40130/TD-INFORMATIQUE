@@ -1,0 +1,20 @@
+//Fonction + programme qui permet d'élever un nombre au carré//
+#include <stdio.h>
+
+int carre(float x)
+{
+    float res;
+    res= x*x;
+    return res;
+}
+
+int main()
+{
+    float n , n2;
+    
+    printf("Entrez un nombre \n");
+    scanf("%f",&n);
+    n2 = carre(n);
+    printf("Le carré de %f est %f . \n",n ,n2);
+    return 0;
+}

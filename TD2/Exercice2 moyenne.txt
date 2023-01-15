@@ -1,0 +1,17 @@
+/*Programme qui calcule la moyenne entre 2 nombres choisient part l'utilisateur.*/
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    float moy;
+    
+    printf("Saisissez votre premier nombre \n");
+    scanf("%d" , &a);
+    printf("Saisissez votre deuxième nombre \n");
+    scanf("%d" , &b);
+    moy = (a+b)/2;
+    printf("La moyenne de %d et %d est de %f", a,b,moy);
+    return 0;
+}

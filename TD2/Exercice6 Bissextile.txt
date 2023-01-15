@@ -1,0 +1,18 @@
+// Programme qui permet de déterminer si une année est bisextile //
+
+#include <stdio.h>
+
+int main(){
+    int annee , bool;
+    
+    printf("Indiquer une annee\n");
+    scanf("%d" , &annee);
+    bool =(annee%4==0) && (bool%100!=0);
+    if(bool){
+        printf("anneebisextile");
+    }
+    else{
+        printf("annee non bisextile");
+    }
+    return 0;
+}

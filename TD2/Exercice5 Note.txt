@@ -1,0 +1,25 @@
+/* Programme qui renvoi un message en fonction de la note saisit par l'utilisateur */
+
+#include <stdio.h>
+
+int main()
+{
+    
+    float n;
+    do{
+    printf("Saisissez votre note entre 0 et 20\n");
+    scanf("%f" , &n);
+    }while(n>20 || n<0);
+    if (n <= 6){
+        printf("Ajourné \n");
+    }
+    else{
+        if(n>= 10){
+        printf("Admis \n");
+    }
+        else{
+        printf("Rattrapage \n");
+        }
+    }
+    return 0;
+}

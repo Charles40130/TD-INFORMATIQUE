@@ -1,0 +1,14 @@
+/* Programme qui calcule la prix après TVA de 20% */
+#include <stdio.h>
+
+int main()
+{
+    
+    float pb,pf;
+    
+    printf("Saisissez le prix de base\n");
+    scanf("%f" , &pb);
+    pf = pb + (pb*0.2);
+    printf("Le prix %f après l'impot sur la TVA de 20% est de %f \n ", pb ,pf);
+    return 0;
+}
